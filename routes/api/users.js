@@ -134,7 +134,7 @@ router.post("/teener", (req, res) => {
   }
   shortlist.reverse()
   shortlist = shortlist.join("")
-  let str = "https://shortly2001.herokuapp.com/" + domhash + "/"
+  let str = "http://localhost:5000/" + domhash + "/"
   let str1 = str + shortlist
 
   Url.findOne({ email: email })
@@ -220,7 +220,7 @@ router.get("/url/:dom/:url", (req, res) => {
 
   let teenyurl = req.params.url
   let domt = req.params.dom
-  let tenn = "https://shortly2001.herokuapp.com/" + domt + "/" + teenyurl
+  let tenn = "http://localhost:5000/" + domt + "/" + teenyurl
   console.log(tenn)
 
 

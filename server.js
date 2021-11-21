@@ -13,7 +13,7 @@ app.get("/:dom/:url", (req, res) => {
 
   let teenyurl = req.params.url
   let domt = req.params.dom
-  let tenn = "https://shortly2001.herokuapp.com/" + domt + "/" + teenyurl
+  let tenn = "http://localhost:5000/" + domt + "/" + teenyurl
   console.log(tenn)
 
 
