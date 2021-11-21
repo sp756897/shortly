@@ -8,10 +8,10 @@ export default class Landing extends Component {
         <div className="row">
           <div className="col s12 center-align" style={{ paddingTop: "21px", paddingBottom: "21px", marginTop: "120px" }}>
             <h4 style={{ fontFamily: "caudex", fontSize: "45px" }}>
-              Welcome To Your Own Web App to get Short...We mean to get Shortened Urls's at<b> Shortly </b> the Shorty Url's Abode
+              Welcome To Your Own Web App to get Short...We mean to get Shortened Urls at<b> Shortly </b> the Shorty Urls Abode
             </h4>
             <h6 style={{ fontSize: "21px" }} className="flow-text grey-text text-darken-1">
-              Ready to Shortened your Url into Life ? Ofcourse right! Then Register Now !!!
+              Ready to bring Shortened Urls into Life ? Ofcourse right! Then Register Now !!!
             </h6>
             <br />
             <div className="col s6" style={{ paddingTop: "21px", marginTop: "79px" }}>

@@ -13,27 +13,25 @@ class VerticalBar extends Component {
         const { dict } = this.state
         var index = []
         var count = []
-        console.log(dict)
         var i = dict.map((val, key) => {
-            index.push(val.index)
+            index.push(val.ind)
             count.push(val.v1)
         })
 
-        console.log(index, count)
 
         const data = {
             labels: index,
             datasets: [
                 {
-                    label: '# of Votes',
+                    label: "No. Of Clicks",
                     data: count,
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',
@@ -63,7 +61,6 @@ class VerticalBar extends Component {
         return (
             <>
                 <div className='header'>
-                    <h1 className='title'>Vertical Bar Chart</h1>
                 </div>
                 <Bar data={data} options={options} />
             </>

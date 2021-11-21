@@ -25,7 +25,7 @@ class Dashboard extends Component {
               <b>Hey there,</b> {user.name.split(" ")[0]} What's Up?<br></br>
               <h className="flow-text grey-text text-darken-1">
                 You are logged into{" "}
-                <span style={{ fontFamily: "monospace" }}>Vircom</span> Ideas app 👏
+                <span style={{ fontFamily: "caudex" }}>Shortly</span> url shortener app 👏
               </h>
             </h4>
 
@@ -36,22 +36,6 @@ class Dashboard extends Component {
                 <div class="card-content white-text">
                   <span class="card-title"><b>Email</b> </span>
                   <p>Your Email is {user.email}</p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card blue z-depth-4" style={{ padding: "1rem" }} >
-                <div class="card-content white-text">
-                  <span class="card-title"><b>Eth Address</b> </span>
-                  <p style={{
-                    display: "inline-block",
-                    overflow: "hidden",
-                    maxWidth: "40ch",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap"
-
-
-                  }}>Ethereum Address</p>
                 </div>
               </div>
             </div>

@@ -15,6 +15,7 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import Sendurl from "./components/dashboard/Sendurl";
 import urlList from "./components/dashboard/urlList";
+import UrlDash from "./components/dashboard/UrlDash";
 
 
 // Check for token to keep user logged in
@@ -50,6 +51,7 @@ class App extends Component {
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/sendurl" component={Sendurl} />
               <PrivateRoute exact path="/urllist" component={urlList} />
+              <PrivateRoute exact path="/urldash" component={UrlDash} />
             </Switch>
           </div>
         </Router>

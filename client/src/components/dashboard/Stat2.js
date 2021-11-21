@@ -13,27 +13,25 @@ class PieChart extends Component {
         const { dict } = this.state
         var index = []
         var count = []
-        console.log(dict)
         var i = dict.map((val, key) => {
-            index.push(val.index)
+            index.push(val.ind)
             count.push(val.v1)
         })
 
-        console.log(index, count)
 
         const data = {
             labels: index,
             datasets: [
                 {
-                    label: '# of Votes',
+                    label: 'No. of Clicks',
                     data: count,
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.9)',
+                        'rgba(54, 162, 235, 0.9)',
+                        'rgba(255, 206, 86, 0.9)',
+                        'rgba(75, 192, 192, 0.9)',
+                        'rgba(153, 102, 255, 0.9)',
+                        'rgba(255, 159, 64, 0.9)',
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',
@@ -51,15 +49,6 @@ class PieChart extends Component {
         return (
             <>
                 <div className='header'>
-                    <h1 className='title'>Pie Chart</h1>
-                    <div className='links'>
-                        <a
-                            className='btn btn-gh'
-                            href='https://github.com/reactchartjs/react-chartjs-2/blob/master/example/src/charts/Pie.js'
-                        >
-                            Github Source
-                        </a>
-                    </div>
                 </div>
                 <Pie data={data} />
             </>

@@ -92,15 +92,24 @@ router.post("/login", (req, res) => {
 });
 
 
-const validUrl = require('valid-url');
 const Url = require("../../models/Urls");
 const UrlLog = require("../../models/UrlLog")
 const Urlclick = require("../../models/Urlclick")
+const valid = (str) => {
+  var pattern = new RegExp(
+    '^((http|https)://)+(www.).*'
+  )
+  return pattern.test(str)
+}
 
 router.post("/teener", (req, res) => {
 
   const { fullurl, email } = req.body;
 
+  if (!valid(fullurl)) {
+    return res.status(400).json({ invalidurl: 'Invalid URL' })
+
+  }
 
   if (!Validator.isURL(fullurl)) {
     return res.status(400).json({ invalidurl: 'Invalid URL' })

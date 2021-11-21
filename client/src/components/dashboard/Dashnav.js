@@ -53,7 +53,7 @@ class Dashnav extends Component {
           }}
           className="btn btn-large waves-effect waves-light hoverable #2196f3 blue"
         >
-          UrlList
+          Url List
         </Link>
         <button
           style={{

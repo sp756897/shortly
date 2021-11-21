@@ -49,12 +49,12 @@ class Sendurl extends Component {
             <div class="row">
                 <Dashnav />
                 <div class="col s12 m8 l9">
-                    <div className="container">
+                    <div className="">
                         <div style={{ marginTop: "3rem" }} className="row">
                             <div className="col s8 offset-s2">
                                 <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                                     <h4>
-                                        <b>Enter Url</b> below
+                                        Enter <b>URL</b> below
                                     </h4>
                                 </div>
                                 <form noValidate onSubmit={this.onSubmit}>
